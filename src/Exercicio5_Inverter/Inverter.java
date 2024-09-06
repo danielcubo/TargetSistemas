@@ -1,7 +1,18 @@
 package Exercicio5_Inverter;
 
+import java.util.Scanner;
+
 public class Inverter {
-    
+    public static void main(String args[]) {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Digite seu nome: ");
+        String nome = teclado.nextLine();
+        teclado.close();
+
+        StringBuilder inverter = new StringBuilder(nome);
+        System.out.println("Seu nome invertido: "+inverter.reverse().toString());
+    }
 }
 
 /*
