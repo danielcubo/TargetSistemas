@@ -1,7 +1,14 @@
 package Exercicio3_Faturamento;
 
-public class Faturamento {
-    
+import org.json.simple.parser.ParseException;
+
+import Exercicio3_Faturamento.Model.Receitas;
+
+public class Main {
+    public static void main(String args[]) throws ParseException {
+        Receitas receitas = new Receitas();
+        receitas.lerJSON();
+    }
 }
 
 /*
